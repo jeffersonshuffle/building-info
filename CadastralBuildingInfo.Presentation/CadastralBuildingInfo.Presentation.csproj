@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="MediatR" Version="12.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CadastralBuildingInfo.Abstractions\CadastralBuildingInfo.Abstractions.csproj" />
+	  <ProjectReference Include="..\CadastralBuildingInfo.WebApi.Contracts\CadastralBuildingInfo.WebApi.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

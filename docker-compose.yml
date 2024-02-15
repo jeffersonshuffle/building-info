@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  cadastralbuildinginfo.webapi:
+    image: ${DOCKER_REGISTRY-}cadastralbuildinginfowebapi
+    build:
+      context: .
+      dockerfile: CadastralBuildingInfo.Web/Dockerfile
+    ports: 
+        - "5000:5000"
+        - "5001:5001"
