@@ -39,8 +39,6 @@ public static class DependencyInjectionExtensions
 
                 httpClient.DefaultRequestHeaders.Add(attr.Name, p.GetValue(settings).ToString());
             };
-            httpClient.DefaultRequestHeaders.Add("Cookie", "route_rest=08458811535f29823d9f1f6a49c808aa");
-            
         }).ConfigurePrimaryHttpMessageHandler(() =>
         {
             return new SocketsHttpHandler
